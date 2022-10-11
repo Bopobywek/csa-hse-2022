@@ -35,9 +35,9 @@ main:
 	push rbp
 	mov rbp, rsp
 scan_input_number:
-	lea	rdi, input_format[rip]
+	lea rdi, input_format[rip]
 	lea rsi, n[rip]
-	xor	eax, eax
+	xor eax, eax
 	call scanf@PLT
 call_factorial:	
 	mov rdi, n[rip]
@@ -48,7 +48,7 @@ print_result:
 	xor eax, eax
 	call printf@PLT
 end_main:
-	xor	eax, eax
+	xor eax, eax
 	pop rbp
 	ret
 
